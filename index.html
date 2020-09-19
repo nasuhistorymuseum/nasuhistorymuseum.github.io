@@ -11,6 +11,7 @@
 <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
   <a-assets>
     <a-asset-item id="model" src="mchouse.glb"></a-asset-item>
+    <a-asset-item id="doki" src="doki.jpg"></a-asset-item>
   </a-assets>
   <a-marker preset="hiro">
     <a-entity gltf-model="#model" play-all-model-animations="" position="0 0 0" rotation="0 140 -10" scale="0.5 0.5 0.5" visible="true">
@@ -22,6 +23,9 @@
         color="#33C3F0"
         negate="false">
     </a-text>
+  </a-marker>
+  <a-marker preset="kanji">
+    <a-box position="0 0 0" color="#FF0000" src="#doki"></a-box>
   </a-marker>
   <a-entity camera></a-camera>
 </a-scene>
